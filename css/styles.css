@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #f4f6f8;
+  color: #20242a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecera {
+  padding: 1rem 1.5rem;
+  background: #182b49;
+  color: white;
+}
+
+.cabecera h1,
+.cabecera p {
+  margin: 0;
+}
+
+.barra-nav {
+  display: flex;
+  gap: .5rem;
+  padding: .5rem 1.5rem;
+  background: white;
+  border-bottom: 1px solid #d9dde3;
+}
+
+.barra-nav button {
+  padding: .6rem 1rem;
+  border: 0;
+  border-radius: .35rem;
+  background: #e6eaf0;
+  color: #182b49;
+  cursor: pointer;
+}
+
+.barra-nav button:hover {
+  background: #d3dae4;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.vista {
+  padding: 1.25rem;
+  background: white;
+  border: 1px solid #d9dde3;
+  border-radius: .5rem;
+}
+
+/* Clase que oculta las vistas inactivas */
+.oculta {
+  display: none;
+}
+
+.pie {
+  padding: 1rem;
+  text-align: center;
+  color: #5a6472;
+}

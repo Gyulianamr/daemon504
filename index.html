@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAEMON 504 | Guardianes del Umbral</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>DAEMON 504</h1>
+        <p>Guardianes del Umbral</p>
+    </header>
+
+    <nav id="barra-nav" class="barra-nav" aria-label="Navegación principal">
+        <button type="button" data-vista="vista-exploracion">Explorar</button>
+        <button type="button" data-vista="vista-equipo">Equipo</button>
+        <button type="button" data-vista="vista-inventario">Inventario</button>
+    </nav>
+
+    <main>
+        <!-- Cada integrante llena SU sección. No cambiar los ids (ver README). -->
+
+        <section id="vista-acceso" class="vista">
+            <h2>Acceso</h2>
+            <!-- TODO: formulario de inicio de sesión y registro -->
+        </section>
+
+        <section id="vista-personaje" class="vista oculta">
+            <h2>Creación de personaje</h2>
+            <!-- TODO: nombre del personaje y 3 tarjetas de daemons iniciales -->
+        </section>
+
+        <section id="vista-exploracion" class="vista oculta">
+            <h2>Exploración</h2>
+            <!-- TODO: zona actual, destinos, botón Explorar, historial -->
+        </section>
+
+        <section id="vista-combate" class="vista oculta">
+            <h2>Combate</h2>
+            <!-- TODO: daemon propio y rival, barras de salud, acciones -->
+        </section>
+
+        <section id="vista-equipo" class="vista oculta">
+            <h2>Equipo</h2>
+            <!-- TODO: hasta 6 tarjetas y reserva -->
+        </section>
+
+        <section id="vista-inventario" class="vista oculta">
+            <h2>Inventario</h2>
+            <!-- TODO: objetos, cantidades y uso -->
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>ISC-305 · Programación Web · III PAC 2026</p>
+    </footer>
+
+    <!-- Orden de carga: datos y lógica primero, app.js al final -->
+    <script src="js/estado.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/vistas/acceso.js"></script>
+    <script src="js/vistas/personaje.js"></script>
+    <script src="js/vistas/exploracion.js"></script>
+    <script src="js/vistas/combate.js"></script>
+    <script src="js/vistas/equipo.js"></script>
+    <script src="js/vistas/inventario.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
