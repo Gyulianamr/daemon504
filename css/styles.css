@@ -115,3 +115,43 @@ form button[type="button"] {
   color: #b3261e;
   font-weight: 600;
 }
+
+/* Tarjetas (compartido: daemons iniciales, equipo, inventario) */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: 1rem;
+  border: 2px solid #d9dde3;
+  border-radius: .5rem;
+  background: white;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.tarjeta:has(input:checked) {
+  border-color: #182b49;
+  background: #eef2f8;
+}
+
+.tarjeta input[type="radio"] {
+  width: auto;
+  align-self: flex-start;
+}
+
+.iniciales {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.iniciales legend {
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
