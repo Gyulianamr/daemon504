@@ -70,3 +70,48 @@ main {
   text-align: center;
   color: #5a6472;
 }
+
+/* Formularios (compartido por todas las vistas) */
+.campo {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .35rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: .7rem;
+  border: 1px solid #b9c0ca;
+  border-radius: .35rem;
+}
+
+.acciones {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+form button {
+  padding: .75rem 1.2rem;
+  border: 0;
+  border-radius: .35rem;
+  background: #182b49;
+  color: white;
+  cursor: pointer;
+}
+
+form button[type="button"] {
+  background: #e6eaf0;
+  color: #182b49;
+}
+
+[role="alert"] {
+  min-height: 1.5rem;
+  color: #b3261e;
+  font-weight: 600;
+}

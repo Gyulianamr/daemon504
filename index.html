@@ -24,7 +24,27 @@
 
         <section id="vista-acceso" class="vista">
             <h2>Acceso</h2>
-            <!-- TODO: formulario de inicio de sesión y registro -->
+            <!-- Reemplaza el contenido de <section id="vista-acceso"> en index.html por esto -->
+            <section id="vista-acceso" class="vista">
+                <h2>Acceso</h2>
+                <p>Inicia sesión o crea una cuenta para comenzar tu aventura.</p>
+
+                <form id="form-acceso" novalidate>
+                    <div class="campo">
+                        <label for="acceso-correo">Correo electrónico</label>
+                        <input id="acceso-correo" name="correo" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="acceso-clave">Contraseña</label>
+                        <input id="acceso-clave" name="clave" type="password" autocomplete="current-password" minlength="6" required>
+                    </div>
+                    <div class="acciones">
+                        <button type="submit" id="btn-iniciar">Iniciar sesión</button>
+                        <button type="button" id="btn-registrar">Registrarse</button>
+                    </div>
+                </form>
+                <p id="acceso-mensaje" role="alert"></p>
+            </section>
         </section>
 
         <section id="vista-personaje" class="vista oculta">
