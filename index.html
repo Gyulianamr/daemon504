@@ -22,9 +22,7 @@
     <main>
         <!-- Cada integrante llena SU sección. No cambiar los ids (ver README). -->
 
-        <section id="vista-acceso" class="vista">
-            <h2>Acceso</h2>
-            <!-- Reemplaza el contenido de <section id="vista-acceso"> en index.html por esto -->
+
             <section id="vista-acceso" class="vista">
                 <h2>Acceso</h2>
                 <p>Inicia sesión o crea una cuenta para comenzar tu aventura.</p>
@@ -45,11 +43,30 @@
                 </form>
                 <p id="acceso-mensaje" role="alert"></p>
             </section>
-        </section>
+        
+
 
         <section id="vista-personaje" class="vista oculta">
             <h2>Creación de personaje</h2>
-            <!-- TODO: nombre del personaje y 3 tarjetas de daemons iniciales -->
+            <p>Elige el nombre de tu aprendiz guardián y a tu primer daemon.</p>
+
+            <form id="form-personaje" novalidate>
+                <div class="campo">
+                    <label for="personaje-nombre">Nombre del personaje</label>
+                    <input id="personaje-nombre" name="nombre" type="text" minlength="3" maxlength="20" required>
+                </div>
+
+                <fieldset class="iniciales">
+                    <legend>Daemon inicial</legend>
+                    <div id="tarjetas-iniciales" class="tarjetas"></div>
+                </fieldset>
+
+                <div class="acciones">
+                    <button type="submit">Comenzar aventura</button>
+                </div>
+            </form>
+            <p id="personaje-mensaje" role="alert"></p>
+        </section>
         </section>
 
         <section id="vista-exploracion" class="vista oculta">

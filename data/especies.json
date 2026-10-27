@@ -1,0 +1,44 @@
+[
+  {
+    "id": "flamin",
+    "nombre": "Flamín",
+    "tipo": "Fuego",
+    "inicial": true,
+    "hp": 39,
+    "ataque": 13,
+    "defensa": 7,
+    "tasa_captura": 0.45,
+    "movimientos": [
+      { "nombre": "Embestida", "poder": 1.0 },
+      { "nombre": "Llamarada", "poder": 1.5 }
+    ]
+  },
+  {
+    "id": "gotin",
+    "nombre": "Gotín",
+    "tipo": "Agua",
+    "inicial": true,
+    "hp": 44,
+    "ataque": 11,
+    "defensa": 9,
+    "tasa_captura": 0.45,
+    "movimientos": [
+      { "nombre": "Embestida", "poder": 1.0 },
+      { "nombre": "Chorro", "poder": 1.4 }
+    ]
+  },
+  {
+    "id": "hojin",
+    "nombre": "Hojín",
+    "tipo": "Planta",
+    "inicial": true,
+    "hp": 45,
+    "ataque": 12,
+    "defensa": 8,
+    "tasa_captura": 0.45,
+    "movimientos": [
+      { "nombre": "Embestida", "poder": 1.0 },
+      { "nombre": "Latigazo", "poder": 1.4 }
+    ]
+  }
+]
