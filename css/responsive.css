@@ -1,0 +1,11 @@
+/* Media queries del proyecto. Cada integrante agrega aquí las de su vista. */
+
+@media (max-width: 560px) {
+  .barra-nav {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
